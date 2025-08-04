@@ -1,0 +1,372 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    height: 40px;
+    
+  }
+
+  .icone-menu img {
+    height: 50px;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 180px;
+  }
+
+
+
+ 
+  .info-img {
+    width: 100%;
+    display: block;
+    
+  }
+
+ .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .dropbtn:hover {
+            color: #7c7c7c;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+  /* Container Geral */
+.container-eventos {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.container-eventos h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.container-eventos .aviso {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-eventos .aviso a {
+  color: #8cbfe9;
+  text-decoration: underline;
+}
+
+/* Cards */
+.cards-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 12px;
+  padding: 25px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.card span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/* Botão */
+.botao {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.botao:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  
+}
+
+.troca-hover {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; 
+  height: 20px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Texto normal */
+.troca-hover::before {
+  content: 'INGRESSOS';
+  position: absolute;
+  transition: opacity 0.3s;
+}
+
+/* Texto no hover */
+.troca-hover::after {
+  content: 'ESGOTADO';
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Efeito hover */
+.troca-hover:hover::before {
+  opacity: 0;
+}
+
+.troca-hover:hover::after {
+  opacity: 1;
+}
+
+/* Efeito de cor opcional no hover */
+.troca-hover:hover {
+ 
+  color: rgb(255, 255, 255);
+}
+
+.troca-hover2 {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; 
+  height: 20px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Texto normal */
+.troca-hover2::before {
+  content: 'PACOTES VIP';
+  position: absolute;
+  transition: opacity 0.3s;
+}
+
+/* Texto no hover */
+.troca-hover2::after {
+  content: 'ESGOTADO';
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Efeito hover */
+.troca-hover2:hover::before {
+  opacity: 0;
+}
+
+.troca-hover2:hover::after {
+  opacity: 1;
+}
+
+/* Efeito de cor opcional no hover */
+.troca-hover2:hover {
+ 
+  color: rgb(255, 255, 255);
+}
+
+footer {
+      padding: 40px 20px 20px;
+      background-color: #fff;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+
+    .footer-column {
+      min-width: 150px;
+    }
+
+    .footer-column h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .subscribe {
+      max-width: 300px;
+      flex: 1;
+    }
+
+    .subscribe p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .subscribe input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+    }
+
+    .subscribe label {
+      font-size: 12px;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .subscribe label input {
+      margin-right: 5px;
+      margin-top: 2px;
+    }
+
+    .subscribe a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .subscribe button {
+      background-color: #e5d4e7;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .footer-divider {
+      border-top: 1px solid #000;
+      margin: 30px 0;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 12px;
+    }
+
+    .footer-bottom div {
+      margin: 5px 0;
+    }
+
+    .footer-bottom a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container, .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-bottom {
+        align-items: center;
+      }
+
+      .footer-bottom a {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+
